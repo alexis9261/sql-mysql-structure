@@ -1,17 +1,25 @@
 -- Crear las tablas
 
-USE metro_cdmx;
+-- Selecciono la base de datos en la cual se crearan las tablas
+USE metro_cdmx; 
 
 CREATE TABLE `lines` (
 
+    -- BIGINT          El campo sera un entero grande
+    -- UNSGNED         El campo  no aceptara numeros negativos
+    -- NOT NULL        El campo no aceptara un valor NULL
+    -- AUTO_INCREMENT  Automaticamente se incrementara de uno en uno
     `id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
 
     `name` VARCHAR(10) NOT NULL,
     `color` VARCHAR(15) NOT NULL,
 
+    --TIMESTAMP  El campo sera de tipo timestamp, es un tipo de dato para fechas
+    --DEFAULT CURRENT_TIMESTAMP Por default cada registro se creara con la fecha actual
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
+    -- PRIMARY KEY El campo id sera la clave primaria de la tabla
     PRIMARY KEY (id)
 
 )

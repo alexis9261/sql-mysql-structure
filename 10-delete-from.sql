@@ -11,3 +11,6 @@ INSERT INTO `stations_delete` (name) VALUES
 ("Pnttlán"), -- Pantitlán
 ("Tauga"), -- Tacuba
 ("MartínCrrera"); -- Martín Carrera
+
+-- NOTA
+-- DELETE FROM NO reestablece los id
